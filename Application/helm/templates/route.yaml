@@ -8,7 +8,7 @@ spec:
     kind: Service
 # set your user name
     name:  {{ .Release.Name }}
-    weight: 100
+    weight: 0
   port:
     targetPort: {{ .Values.service.servicePort }}
   wildcardPolicy: None
